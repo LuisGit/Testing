@@ -4,6 +4,9 @@ ruby '1.9.3'
 gem 'therubyracer'
 gem 'execjs'
 
+#adding devise
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
@@ -38,13 +41,12 @@ end
 
 group :production do
   gem 'mysql2','~>0.3.11'
-  gem 'pg','0.15.1'
   gem 'rails_12factor','0.0.2'
 end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc','0.3.20', require: false
+  gem 'sdoc', require: false
 end
 
 # Use ActiveModel has_secure_password
