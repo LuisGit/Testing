@@ -1,0 +1,8 @@
+<% if user_signed_in? %>
+  <p>Welcome  <%= current_user.f_name %> </p>
+  <p> <%= link_to "Sign out", destroy_user_session_path, :method => :delete %> </p>
+<% else %>
+  <p><%= link_to "Create a new account", new_user_registration_path %></p>
+  <p><%= link_to "Sign in", new_user_session_path %></p>
+<%end%>
+
